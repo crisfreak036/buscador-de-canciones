@@ -11,6 +11,7 @@ function buscarCancion(e){
 
     // Valida que los valores sean correctos
     if(artista === '' || cancion === ''){
+        UI.limpiarLetraCancion();
         UI.mostrarAlerta('¡Error! Todos los campos son obligatorios', 'error', 2500);
         return;
     }
