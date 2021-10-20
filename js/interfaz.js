@@ -6,7 +6,7 @@ export const contenedorBusqueda = document.querySelector('#buscar'),
             resultado = document.querySelector('#resultado'),            
             contenedorMensajes = document.querySelector('#mensajes');
 
-export function mostrarAlerta(mensaje, tipo){
+export function mostrarAlerta(mensaje, tipo, tiempo){
     if(tipo === 'error'){
         contenedorMensajes.classList.add('error');
         contenedorMensajes.textContent = mensaje;
@@ -14,8 +14,13 @@ export function mostrarAlerta(mensaje, tipo){
         setTimeout(() => {
             contenedorMensajes.textContent = '';
             contenedorMensajes.classList.remove('error');
-        }, 3000);        
+        }, tiempo);        
     }
+}
+
+export function limpiarLetraCancion(){
+    encabezadoResultado.textContent = '';
+    resultado.textContent = '';
 }
 
 export function mostrarLetra( cancion, artista, letra){
