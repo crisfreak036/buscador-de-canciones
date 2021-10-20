@@ -1,4 +1,5 @@
 import * as UI from './interfaz.js';
+import API from './api.js';
 
 UI.formulario.addEventListener('submit', buscarCancion);
 
@@ -10,16 +11,11 @@ function buscarCancion(e){
 
     // Valida que los valores sean correctos
     if(artista === '' || cancion === ''){
-        UI.contenedorMensajes.classList.add('error');
-        UI.contenedorMensajes.textContent = '¡Error! Todos los campos son obligatorios'
-
-        setTimeout(() => {
-            UI.contenedorMensajes.textContent = '';
-            UI.contenedorMensajes.classList.remove('error');
-        }, 2500);
-
+        UI.mostrarAlerta('¡Error! Todos los campos son obligatorios', 'error', 2500);
         return;
     }
 
-    // Consultar API
+    // Consultar API y muestra el resultado en el DOM
+    const busqueda = new API(artista, cancion);
+    busqueda.consultarAPI();
 }
