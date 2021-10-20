@@ -8,3 +8,10 @@ La idea principal de este proyecto es practicar el consumo de APIs y el scriptin
 
 ## ¿Quién es el auto del proyecto?
 Todo lo relacionado al código HTML y CSS del proyecto se le atribuye al instructor, mientras que el código JavaScript es tanto idea del instructor como mía.
+
+## ¿Cómo probar el funcionamiento del proyecto?
+
+Existen dos opciones:
+
+1. Clonar el repositorio o descargar el contenido del repositorio para correr el proyecto de manera local.
+2. Puede ingresar al siguiente enlace [Buscador de Letra de Canciones](https://youthful-hodgkin-1d38a4.netlify.app/).
