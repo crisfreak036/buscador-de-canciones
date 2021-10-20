@@ -14,6 +14,11 @@ export function mostrarAlerta(mensaje, tipo){
         setTimeout(() => {
             contenedorMensajes.textContent = '';
             contenedorMensajes.classList.remove('error');
-        }, 2500);        
+        }, 3000);        
     }
+}
+
+export function mostrarLetra( cancion, artista, letra){
+    encabezadoResultado.textContent = `Letra de la canción: ${cancion} de ${artista}`
+    resultado.textContent = letra;
 }
