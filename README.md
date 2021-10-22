@@ -6,7 +6,7 @@ En este repositorio se encuentra el proyecto 37 **_Buscador de Canciones con fec
 ## ¿Cuál es el objetivo del proyecto?
 La idea principal de este proyecto es practicar el consumo de APIs y el scripting de la información que la API entrega en el DOM.
 
-## ¿Quién es el auto del proyecto?
+## ¿Quién es el autor del proyecto?
 Todo lo relacionado al código HTML y CSS del proyecto se le atribuye al instructor, mientras que el código JavaScript es tanto idea del instructor como mía.
 
 ## ¿Cómo probar el funcionamiento del proyecto?
